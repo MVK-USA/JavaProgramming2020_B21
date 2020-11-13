@@ -18,6 +18,13 @@ public class VoidMethodPractice {
         arrayMaxNum(a2);
         arrayMinNum(a2);
 
+        int[] a3 = {1,1,2,3,3,4,5,5,5,5,6,6,6,7};
+
+        int[] a4 = {10,10,8,11,11,11,9};
+
+        arrayUniqueElements(a3);
+        arrayUniqueElements(a4);
+
     }
 
 
@@ -43,10 +50,29 @@ public class VoidMethodPractice {
 
         System.out.println("Minimum number is: "+ min);
     }
+
+    public static void arrayUniqueElements(int[] arr){
+
+        for(int each: arr){
+            int count=0;
+            for(int each2: arr){
+                if (each == each2){
+                    count++;
+                }
+            }
+            if(count ==1) {
+                System.out.print(each + " ");
+            }
+
+
+        }
+        System.out.println();
+    }
 }
 /*
     1. create a function that can print out the maximum number from any given integer array
     2. create a function that can print out the minimum number from any given integer array
     3. create a function that can print the unique elements from the array
+
 
  */
