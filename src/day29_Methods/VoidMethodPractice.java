@@ -11,12 +11,15 @@ public class VoidMethodPractice {
         int[]a1 = {100,-200, 300, 50, 40, 59, 700, 0, 1, 2};
 
         arrayMaxNum(a1);
+        arrayMinNum(a1);
 
         int[] a2 = {1,2,3,4,5,6,7,800,9,0,1,12,13,4};
 
         arrayMaxNum(a2);
+        arrayMinNum(a2);
 
     }
+
 
     public static void arrayMaxNum(int[] arr){
         /*Arrays.sort(arr);
@@ -29,6 +32,16 @@ public class VoidMethodPractice {
              }
          }
         System.out.println("Maximum number is: "+ max);
+    }
+
+    public static void arrayMinNum(int[] arr){
+        int min = arr[0];
+        for(int each:arr)
+            if(each< min)
+                min= each;
+
+
+        System.out.println("Minimum number is: "+ min);
     }
 }
 /*
