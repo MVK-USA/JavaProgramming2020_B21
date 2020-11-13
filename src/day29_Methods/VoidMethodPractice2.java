@@ -28,8 +28,10 @@ public class VoidMethodPractice2 {
             System.out.println("Equal numbers");
         }
     }
+
+
 }
 /*
  1. write a method that calculates the sum of 3 numbers
- 2. write a method that shows
+ 2. write a method that shows the greater number or equal
  */
