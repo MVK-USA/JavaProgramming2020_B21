@@ -7,38 +7,45 @@ import java.util.Arrays;
 public class WarmUpTasks {
 
     public static void main(String[] args) {
+        positiveNegativeZero(123);
+        positiveNegativeZero(0);
+        positiveNegativeZero(-10);
 
-
-        pozitiveNegativeZero(-15);
-        pozitiveNegativeZero(0);
-        pozitiveNegativeZero(15);
-
+        System.out.println("===================================");
         int[] numbers = {1, 2, 3, 4, -5, -6, -7, -8, 10, 11, 0};
 
-        for (int each : numbers) {
-            pozitiveNegativeZero(each);
+        for (int i = 0; i <= numbers.length - 1; i++) {
+            positiveNegativeZero(numbers[i]);
         }
 
-        gradeCalculator(80);
-        gradeCalculator(-120);
+        System.out.println("======================================");
 
-        System.out.println("=========================================");
-        int[] a1 = {10, 50, 60, 70};
+        gradeCalculator(85);
+
+        //positiveNegativeZero(-120);
+        //   gradeCalculator(-120);
+
+        System.out.println("======================================");
+        int[] a1 = {10,50, 60, 70};
         int[] a2 = {20, 90, 100};
 
         combineTwoArrays(a1, a2);
 
-        System.out.println("===================================");
+        System.out.println("=======================================");
+        removeDuplicates("aaaaabbbbbbbbbaaaaccccccccbbbbbbbbbdddddd");
 
-        removeDuplicates("aaaaaabbbbbbbbbbbbbbbcccccccccccccccccaaaaaaaaaadddddddddddddddcbd");
-
-        String str = "pppppppppooooooooooooiiiiiiiiiiiiiicifjjjjjbhhveiuhfrueiafbvh";
+        String str = "pppppooooooiiiiuuuuuuyyyyttttttt";
         removeDuplicates(str);
+
+        System.out.println("===========================");
+
+        formattedFullName("cYbErTeK", "SCHOOL");
+
     }
 
     // task 1. create a function that can check if the given integer is positive, negative or zero
 
-    public static void pozitiveNegativeZero(int number) {
+    public static void positiveNegativeZero(int number) {
         String result = (number > 0) ? "Positive" : (number < 0) ? "Negative" : "Zero";
 
         System.out.println(number + " is " + result);
@@ -114,20 +121,22 @@ public class WarmUpTasks {
 
         }
 
-        // task
+        // task 5.  write a method that can print out the full name of a person in reugral format
+    //            ex: fullName("cYbErTeK", "SCHOOL");
+    //                output: "Cybertek School"
+    //                                   "cYbErTeK"
+    public static void formattedFullName(String first, String last){
+      first =  first.substring(0,1).toUpperCase() + first.substring(1).toLowerCase();   //"Cybertek"
+        last =  last.substring(0,1).toUpperCase() + last.substring(1).toLowerCase();    // "School"
+
+       String fullName = first+" "+ last;
+
+        System.out.println(fullName);
+
+    }
 
 
     }
 
 
-/*
 
-
-
-    5.  write a method that can print out the full name of a person in reugral format
-            ex:
-               fullName("cYbErTeK", "SCHOOL");
-                output:
-                    "Cybertek School"
-
- */
