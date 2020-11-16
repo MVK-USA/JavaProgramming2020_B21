@@ -23,10 +23,17 @@ public class WarmUpTasks {
         gradeCalculator(-120);
 
         System.out.println("=========================================");
-        int[] a1 = {10, 50, 60,70};
+        int[] a1 = {10, 50, 60, 70};
         int[] a2 = {20, 90, 100};
 
         combineTwoArrays(a1, a2);
+
+        System.out.println("===================================");
+
+        removeDuplicates("aaaaaabbbbbbbbbbbbbbbcccccccccccccccccaaaaaaaaaadddddddddddddddcbd");
+
+        String str = "pppppppppooooooooooooiiiiiiiiiiiiiicifjjjjjbhhveiuhfrueiafbvh";
+        removeDuplicates(str);
     }
 
     // task 1. create a function that can check if the given integer is positive, negative or zero
@@ -68,17 +75,17 @@ public class WarmUpTasks {
     }
 
     // task 3. create a function that can print out the combination of two integer arrays
-                    //                    {1,2}        {3,4,5}
-    public static void combineTwoArrays(int[] arr1, int[] arr2){
-        int[] arr3 = new int[arr1.length +arr2.length];
-        int i =0; //repesents the index num of arr3
+    //                    {1,2}        {3,4,5}
+    public static void combineTwoArrays(int[] arr1, int[] arr2) {
+        int[] arr3 = new int[arr1.length + arr2.length];
+        int i = 0; //repesents the index num of arr3
 
-        for(int each : arr1){
-             arr3[i++] = each; // each elements of arr1 is being assigned to the index of the third aray
+        for (int each : arr1) {
+            arr3[i++] = each; // each elements of arr1 is being assigned to the index of the third aray
         }
 
         // i=2
-        for(int each: arr2){
+        for (int each : arr2) {
             arr3[i++] = each; // each elements of arr2 is being assigned to the index of the third aray
         }
 
@@ -86,12 +93,37 @@ public class WarmUpTasks {
         System.out.println(Arrays.toString(arr3));
     }
 
-}
+    // task 4. create a function that can print a string without the duplicated characters
+    //                                    "aabccb"
+    public static void removeDuplicates(String str) {
+        String result = "";  //"abc"
+
+        for( int i = 0; i <= str.length()-1; i++  ){
+            if(!result.contains( ""+str.charAt(i) )){
+                result += str.charAt(i);
+            }
+        }
+              /*  if(result.contains(each)){              //   2й вариант
+                    continue;                           //
+                }else{
+                    result+= each;
+                } */
+
+                System.out.println(result);
+
+
+        }
+
+        // task
+
+
+    }
+
 
 /*
 
 
-    4. create a function that can print a string without the duplicated characters
+
     5.  write a method that can print out the full name of a person in reugral format
             ex:
                fullName("cYbErTeK", "SCHOOL");
