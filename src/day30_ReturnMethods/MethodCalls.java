@@ -1,7 +1,7 @@
 package day30_ReturnMethods;
 
-import library.StringUtility;
-import library.ArraysUtility;
+import Library.StringUtility;
+import Library.ArraysUtility;
 
 import java.util.Arrays;
 
