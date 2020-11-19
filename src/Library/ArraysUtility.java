@@ -71,11 +71,45 @@ public class ArraysUtility {
         return reversedArray;
     }   // sorts in descending order
 
+    public static double[] sort(double[] arr){  // {2,1,3}
+        Arrays.sort(arr);  // {1,2,3};
+        double[] reversedArray = new double[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
     public static String printArray(int[] arr){
         String str = Arrays.toString(arr);
         str = str.replace("[", "{").replace("]", "}");
         return str;
     }
+
+    public static char[] sort(char[] arr){  // {2,1,3}
+        Arrays.sort(arr);  // {1,2,3};
+        char[] reversedArray = new char[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
+    public static String[] sort(String[] arr){
+        Arrays.sort(arr);  // {1,2,3};
+        String[] reversedArray = new String[arr.length];  // {3, 2, 1}
+
+        for(int i=arr.length-1, j = 0 ;  i>=0; i--, j++){
+            reversedArray[j] = arr[i];
+        }
+
+        return reversedArray;
+    }
+
 
 
 }
