@@ -13,6 +13,15 @@ public class ArraysUtility {
         }
         return max;
     }
+    public static double max(double[] arr){
+        double max =arr[0];
+        for( double each  : arr ){
+            if(each > max){
+                max = each;
+            }
+        }
+        return max;
+    }
 
     public static int min(int[] arr){
         int min = arr[0];
@@ -23,6 +32,16 @@ public class ArraysUtility {
             }
         }
 
+        return min;
+    }
+    public static double min(double[] arr){
+        double min = arr[0];
+
+        for(double each : arr) {
+            if (each < min) {
+                min = each;
+            }
+        }
         return min;
     }
 
