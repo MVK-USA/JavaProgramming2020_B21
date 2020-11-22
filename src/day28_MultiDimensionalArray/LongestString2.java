@@ -11,7 +11,6 @@ public class LongestString2 {
             if(each.length() > maxLength){
                 maxLength = each.length();
             }
-
             if(each.length() < minLength ){
                 minLength = each.length();
             }
