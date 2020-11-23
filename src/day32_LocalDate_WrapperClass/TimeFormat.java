@@ -52,7 +52,7 @@ public class TimeFormat {
         LocalDateTime dt1 = LocalDateTime.of(2020,11,23,12,40);
 
         System.out.println(dt1);
-        System.out.println(dtf.format(dt1));
+        System.out.println(dt1.format(dtf));
 
 
     }
