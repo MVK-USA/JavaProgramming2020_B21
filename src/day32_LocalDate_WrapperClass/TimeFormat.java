@@ -74,6 +74,31 @@ public class TimeFormat {
         System.out.println(currentYear);
         System.out.println(age);
 
+        System.out.println(DofB.plusDays(10));
+
+        LocalDate rightNow = LocalDate.now();
+
+        LocalDate holidayBreak = rightNow.plusDays(2);
+
+        System.out.println(holidayBreak);
+
+        LocalTime time = LocalTime.now();
+        LocalTime lunchBreak = time.plusMinutes(15);
+
+        System.out.println(lunchBreak.format(tf));
+
+        System.out.println("===================================");
+
+        LocalTime classStarts = LocalTime.of(10,0);
+        LocalTime firstBreak = classStarts.plusMinutes(45);
+        System.out.println(firstBreak);
+
+        LocalTime secondBreak = firstBreak.plusMinutes(15).plusMinutes(45);
+        System.out.println(secondBreak);
+
+        LocalTime thirdBreak = secondBreak.plusMinutes(15).plusMinutes(45);
+        System.out.println(thirdBreak);
+
 
 
     }
