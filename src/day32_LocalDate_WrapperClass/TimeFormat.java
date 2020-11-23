@@ -54,6 +54,27 @@ public class TimeFormat {
         System.out.println(dt1);
         System.out.println(dt1.format(dtf));
 
+        // task:
+        LocalDate tomorrow = LocalDate.of(2020,11,24);
+        System.out.println(tomorrow.format(df));
+
+        boolean r1 = today.isBefore(tomorrow); //true
+        boolean r2 = today.isAfter(tomorrow); // false
+
+        System.out.println(r1);
+        System.out.println(r2);
+
+        //calculate the age
+                                 //2020-11-23     2020
+        int currentYear = LocalDate.now().getYear();
+        LocalDate DofB = LocalDate.of(2000, 5, 19);
+
+        int age = currentYear - DofB.getYear();
+
+        System.out.println(currentYear);
+        System.out.println(age);
+
+
 
     }
 }
