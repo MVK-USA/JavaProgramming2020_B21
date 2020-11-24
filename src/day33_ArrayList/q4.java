@@ -10,6 +10,3 @@ public class q4 {
         System.out.println(Arrays.toString(arr));
     }
 }
-/*
-
- */
