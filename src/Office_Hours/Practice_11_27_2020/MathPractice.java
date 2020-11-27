@@ -29,6 +29,15 @@ public class MathPractice {
         System.out.println("min = " + min);
         System.out.println("max = " + max);
 
+        System.out.println(Math.PI);
+        System.out.println(Math.E);
 
+        double n5 = Math.sqrt(100.0);
+        System.out.println(n5);
+
+        System.out.println(calculateAreaOfCircle(3));
+    }
+    public static double calculateAreaOfCircle(double r){
+        return Math.PI*Math.pow(r,2);
     }
 }
