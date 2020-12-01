@@ -32,7 +32,7 @@ public class CarObjects {
         System.out.println(car3.model);
 
         Car car4 = new Car();
-        car4.setInfo("Mercedes", "C300", "Red", 2018);
+        car4.setInfo("Mercedes", "C300", "Red", 2018, 10000);
 
         System.out.println(car4.brand);
         System.out.println(car4.model);

@@ -6,17 +6,21 @@ public class Car {
     public String model;
     public String color;
     public int year;
-    public void setInfo(String carBrand, String carModel, String carColor, int carYear){ // Instance methods
+    public double price;
+
+    public void setInfo(String carBrand, String carModel, String carColor, int carYear,
+                        double carPrice){ // Instance methods
         brand = carBrand;
         model = carModel;
         color = carColor;
         year = carYear;
+        price = carPrice;
     }
+
 
     public void getInfo(){
-        System.out.println(year+" "+brand+" "+model+" "+color);
+        System.out.println(year+" "+brand+" "+model+" "+color+" $"+price);
     }
-
 }
 /*
 Car class:
