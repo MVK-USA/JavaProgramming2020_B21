@@ -1,5 +1,7 @@
 package day37_CustomClass;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,6 +41,31 @@ public class StudentObject {
         ArrayList<Student> studentList = new ArrayList<>( Arrays.asList(student1, student2, student3) );
 
         System.out.println( studentList );
+
+        System.out.println("==============================================");
+        Student[] students = {student1, student2, student3};
+        System.out.println(Arrays.toString(students));
+
+        System.out.println("=====================================");
+        // find the student who has ID of C456
+
+        for(Student each: students){
+            if(each.ID.equals("A01")){
+                System.out.println(each);
+
+                System.out.println("=================================");
+
+                Student s1 = new Student();
+                Student s2 = s1;
+
+                s1.setInfo("Aaron", 'M', LocalDate.of(2000,11,2), "A01", 3.5);
+                s2.setInfo("Mary", 'F', LocalDate.of(1995, 9, 5), "C456", 3.8);
+
+                System.out.println(s1);
+                System.out.println(s2);
+            }
+        }
+
 
 
 
