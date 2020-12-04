@@ -53,9 +53,16 @@ public class Masha {
         System.out.println("================================================");
 
         ArrayList<Offer> goodSalary = new ArrayList<>(offers);
-        goodSalary.removeIf(p -> p.salary < 120000);
+        goodSalary.removeIf( p -> p.salary < 120000); // removes all offers that has salary less than 120k
 
-        System.out.println("$120k or more: "+goodSalary);
+        System.out.println("$120k or more: "+goodSalary.size());
+
+        System.out.println("===============================================================");
+
+        ArrayList<Offer> fullTime = new ArrayList<>(offers);
+        fullTime.removeIf( p -> !p.isFullTime);
+
+        System.out.println("Full time: "+fullTime.size());
 
     }
 }
