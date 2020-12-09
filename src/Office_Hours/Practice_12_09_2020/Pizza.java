@@ -5,7 +5,7 @@ public class Pizza {
     public int cheeseTopping, pepperoniTopping;
     public double priceOfPizza, tips, totalPrice;
 
-    public void customizeOrder(String size, int cheeseTopping, int pepperoniTopping) {
+    public void customizeOrder(String size, int cheeseTopping, int pepperoniTopping, double tips) {
         this.size = size;
         this.cheeseTopping = cheeseTopping;
         this.pepperoniTopping = pepperoniTopping;
@@ -14,7 +14,7 @@ public class Pizza {
        // tips = tips/100; // converting percantage
 
         this.tips = tips/100 * priceOfPizza;
-        totalPrice = priceOfPizza + this.tips;
+        totalPrice = priceOfPizza + this.tips+ (priceOfPizza * 0.08); //0.08 -tax
     }
 
     public double calcCost() {
