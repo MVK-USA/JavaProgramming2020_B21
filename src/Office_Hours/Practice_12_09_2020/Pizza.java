@@ -9,6 +9,12 @@ public class Pizza {
         this.size = size;
         this.cheeseTopping = cheeseTopping;
         this.pepperoniTopping = pepperoniTopping;
+
+        priceOfPizza = calcCost();
+       // tips = tips/100; // converting percantage
+
+        this.tips = tips/100 * priceOfPizza;
+        totalPrice = priceOfPizza + this.tips;
     }
 
     public double calcCost() {
@@ -18,6 +24,8 @@ public class Pizza {
         double cheese = 1 * cheeseTopping;
         double pepperoni = 1.5 * pepperoniTopping;
         return startingPrice + cheese + pepperoni;
+
+
 
     }
 
