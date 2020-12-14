@@ -45,7 +45,7 @@ public class BankAccount {
 
     public void deposit(double amount){
         if(amount < 0){
-            System.out.println("Invalid number");
+            System.out.println("Invalid number: "+ amount);
             return;
         }
 
@@ -64,7 +64,7 @@ public class BankAccount {
     }
 
     public void availableBalance(){
-        System.out.println("Available Balance of "+ getAccountNumber() +" is: $"+getBalance());
+        System.out.println("Available Balance of the account #"+ getAccountNumber() +" is: $"+getBalance());
     }
 
 
