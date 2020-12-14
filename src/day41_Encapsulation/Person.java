@@ -1,10 +1,20 @@
 package day41_Encapsulation;
 
+import java.time.LocalDate;
+
 public class Person {
 
     private String name;
-    private int age;
-    private char gender;
+    private int age;  // final means constant
+    private final char gender; // final means constant
+    private final LocalDate BOD; // final means constant
+
+    public Person(String name, int age, char gender, LocalDate BOD) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.BOD = BOD;
+    }
 
     public String getName() {
         return name;
@@ -26,8 +36,7 @@ public class Person {
         return gender;
     }
 
-    public void setGender(char gender) {
-        this.gender = gender;
+    public LocalDate getBOD() {
+        return BOD;
     }
 }
-
