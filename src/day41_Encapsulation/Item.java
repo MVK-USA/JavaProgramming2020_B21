@@ -10,30 +10,30 @@ public class Item {
         this.quantity = quantity;
         this.unitPrice = unitPrice;
     }
+
     public double calcCost(){
         return quantity * unitPrice;
     }
 
-
     public String toString() {
         return "Item{" +
-                "name='" + name + '\'' +
-                ", quantity=" + quantity +
-                ", unitPrice=" + unitPrice +
-                ", total price = $"+ calcCost()+
+                "name ='" + name + '\'' +
+                ", quantity = " + quantity +
+                ", unitPrice = $" + unitPrice +
+                ", total price= $" + calcCost()+
                 '}';
     }
-}
 
+
+}
 
 /*
 create a class called Item
-            instance variables:
-                name, unitPrice, quantity
-            add a constructor that can initialize the fields
-            instance methods:
-                calcCost(): returns the total cost as double
-                            hint: totalCost = quantity * unitPrice
-                toString(): returns the name, unit price, quantity and total cost info as calculated by calcCost()
-
+			instance variables:
+				name, unitPrice, quantity
+			add a constructor that can initialize the fields
+			instance methods:
+				calcCost(): returns the total cost as double
+							hint: totalCost = quantity * unitPrice
+				toString(): returns the name, unit price, quantity and total cost info as calculated by calcCost()
  */
