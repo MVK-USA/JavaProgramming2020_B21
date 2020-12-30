@@ -1,6 +1,5 @@
 package day44_Inheritance.ShapeTask;
-
-public class Circle extends Shape {
+public final class Circle extends Shape {
     /*
     variables: 4 ( 1 ins, 3 sta)
     methods: 4 (4 ins)
@@ -14,7 +13,7 @@ public class Circle extends Shape {
     }
 
     public Circle(double radius){
-        setInfo("Circle");
+        super("Circle");
         this.radius = radius;
         diameter = this.radius * 2;
     }
@@ -24,14 +23,10 @@ public class Circle extends Shape {
         return radius * radius * PI;
     }
 
-}
-
-class Test{
-
-    public static void main(String[] args) {
-
-
+    public double calcPerimeter(){
+        return diameter * PI ;
     }
+
 
 
 }

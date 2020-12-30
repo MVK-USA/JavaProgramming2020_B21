@@ -1,6 +1,7 @@
 package day44_Inheritance.ShapeTask;
 
 public class ShapeObject {
+
     public static void main(String[] args) {
 
         Circle circle = new Circle(3);
@@ -18,6 +19,5 @@ public class ShapeObject {
 
 
     }
-
 
 }

@@ -4,7 +4,7 @@ public class Shape {
     public String name;
     public final static boolean isShape, hasArea, hasPerimeter; // constant
 
-    public void setInfo(String name){
+    public Shape(String name){
         this.name=name;
     }
 
@@ -42,5 +42,3 @@ public class Shape {
 						methods: setInfo, calcArea(), calcPerimeter()
 								 toString(): returns the name, area and perimeter that are returned by calcArea(), calcPerimeter()
  */
-
-

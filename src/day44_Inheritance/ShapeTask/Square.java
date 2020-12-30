@@ -1,6 +1,6 @@
 package day44_Inheritance.ShapeTask;
 
-public class Square extends Shape {
+public final class Square extends Shape {
 
     /*
      variables: 4 ( 1 ins, 3 sta)
@@ -9,10 +9,19 @@ public class Square extends Shape {
     public double side;
 
     public Square(double side){
+        super("Square");
         this.side = side;
-        setInfo("Square");
+
     }
 
+    @Override
+    public double calcArea() {
+        return side * side;
+    }
 
+    @Override
+    public double calcPerimeter() {
+        return side * 4;
+    }
 
 }
