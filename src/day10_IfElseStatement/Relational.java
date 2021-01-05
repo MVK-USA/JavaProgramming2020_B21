@@ -35,7 +35,7 @@ public class Relational {
         System.out.println(language1 == language3);
 
         //!=
-        System.out.println("Russian language == Japanese languge");
+        System.out.println("Russian language == Japanese language");
         System.out.println("Russian language != Japanese language");
 
 

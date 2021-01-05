@@ -7,7 +7,7 @@ public class EligibleToVote {
         String citizen = "USA";
 
         boolean EligibleToVote = citizen == "USA";
-        System.out.println(name+ " is eligible to vote for Donald Trunp or Joe Biden?\n\t" +EligibleToVote);
+        System.out.println(name+ " is eligible to vote for Donald Trump or Joe Biden?\n\t" +EligibleToVote);
 
         System.out.println("=========================================");
 

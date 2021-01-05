@@ -8,7 +8,7 @@ public class EligibleToBuyAlcohol {
 
         boolean isEligible = age >=21;
 
-        System.out.println(name+ "is eligible to buy alcohol?\n\t" + isEligible);
+        System.out.println(name+ " is eligible to buy alcohol?\n\t" + isEligible);
 
         /*
          write a program that can check if the person is eligible to buy alcohol
