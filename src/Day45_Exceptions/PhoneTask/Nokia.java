@@ -4,7 +4,7 @@ public final class Nokia extends Phone{
     public Nokia(String model, double price) {
         super("Nokia", model, "Finland", price);
     }
-    public void selfDefence(){
+    public void selfDefense(){
         System.out.println(brand+" "+model+" is for self defense");
     }
     public void breakTheFloor(){

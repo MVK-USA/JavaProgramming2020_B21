@@ -21,5 +21,14 @@ public class Walmart {
         System.out.println(samsung);
         System.out.println(nokia);
         System.out.println(huawei);
+
+        iphone.faceTime(123456);
+        // samsung.faceTime(456789);
+
+        samsung.freeze();
+
+        nokia.selfDefense();
+
+        huawei.spy();
     }
 }
