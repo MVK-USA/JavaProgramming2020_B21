@@ -29,6 +29,10 @@ public class Car {
         this.year = year;
         this.price = price;
     }
+
+    public Car(String brand, String model, String color, int year) {
+    }
+
     public String toString() {
         return "Car{" +
                 "brand= '" + brand + '\'' +
