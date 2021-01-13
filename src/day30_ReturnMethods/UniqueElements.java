@@ -5,7 +5,6 @@ public class UniqueElements {
     public static void main(String[] args) {
         String str = "aaabbbcccdddefffffg";
 
-
         String unique = ""; // "eg"
 
         for(int i=0; i <= str.length()-1; i++) {
@@ -20,6 +19,7 @@ public class UniqueElements {
         System.out.println(unique);
 
         System.out.println("================================================");
+
         String word = "ababcdedeh";
 
         String result1 =  unique(word);
