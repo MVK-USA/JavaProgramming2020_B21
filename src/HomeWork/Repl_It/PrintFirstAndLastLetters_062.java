@@ -13,7 +13,10 @@ public class PrintFirstAndLastLetters_062 {
         //int lastCharIndex = charCount - 1;
         char lastLetter = word.charAt(word.length()-1);
 
-        System.out.println((firstLetter) + (lastLetter));
+        System.out.println(firstLetter);
+        System.out.println(lastLetter);
+
+
 
 
     }
