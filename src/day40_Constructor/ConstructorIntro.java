@@ -1,6 +1,6 @@
 package day40_Constructor;
 
-public class ConstructorIntro {
+public class  ConstructorIntro {
 
     static int b;
 

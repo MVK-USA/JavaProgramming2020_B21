@@ -12,7 +12,7 @@ public class StaticBlocks {
 
     public int a;
 
-    //xcelSheet
+    //ExcelSheet
 
     static{
         company = "Capital One";
