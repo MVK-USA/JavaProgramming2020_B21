@@ -6,7 +6,7 @@ public abstract class Phone {
     public double price;
 
     public Phone(String brand, String model, String size, String color, double price) {
-        if(price<0){
+        if(price < 0){
             throw new RuntimeException("Invalid Price, cannot be negative");
         }
 
@@ -16,9 +16,10 @@ public abstract class Phone {
         this.color = color;
         this.price = price;
     }
-        public abstract void text();
 
-        public abstract void call();
+    public abstract void text();
+
+    public abstract void call();
 
     @Override
     public String toString() {
@@ -30,13 +31,13 @@ public abstract class Phone {
                 ", price=" + price +
                 '}';
     }
+
 }
 /*
 4. create an abstract class named Phone
-            instance variables: brand, model, price, size
+            instance variables: brand, model, price, size, color
             abstract methods: texting(), calling()
             add constructor that can initialize the fields
             if the price is set to negative, the system should throw an exception with a message of:
                     Invalid Price, cannot be negative
-
  */
