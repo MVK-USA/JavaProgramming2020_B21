@@ -2,8 +2,9 @@ package day48_Abstraction.AnimalTask;
 
 public interface Playable {
 
-    boolean isWild = true;
+    boolean isFriendly = true;
 
     void play();
+
 
 }
