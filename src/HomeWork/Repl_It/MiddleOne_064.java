@@ -31,4 +31,15 @@ You have a word, do the following:
       $$ ==>$$$$
       hi ==> hihi
 
+      import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String word = scan.next();
+    //YOUR CODE HERE
+
+  }
+}
+
  */
