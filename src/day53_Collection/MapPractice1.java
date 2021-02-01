@@ -65,6 +65,12 @@ public class MapPractice1 {
         System.out.println(nameMax +" : "+max);
         System.out.println(nameMin +" : "+min);
 
+        // employeeInfo.values().forEach(p -> { System.out.println(p); });
+
+        for(Double eachValue : employeeInfo.values()){
+            System.out.println(eachValue);
+        }
+
 
     }
 }
