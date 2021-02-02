@@ -1,6 +1,10 @@
 package day53_Collection;
 
+import javafx.print.Collation;
+
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MapPractice1 {
@@ -70,6 +74,8 @@ public class MapPractice1 {
         for(Double eachValue : employeeInfo.values()){
             System.out.println(eachValue);
         }
+
+
 
 
     }
